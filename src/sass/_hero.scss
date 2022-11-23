@@ -1,5 +1,6 @@
 .hero{
     background-color: #06071B;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     margin: 0 auto;
 
     @media screen and (min-width: 481px) {
@@ -7,8 +8,10 @@
     }
 
 
-    &__block{
-
+    &__image{
+        @media screen and (max-width: 767px){
+            display: none;
+        }
     }
     &__title{
         margin-bottom: 12px;
@@ -41,13 +44,13 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
-        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        background-image: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
         border-radius: 5px;
         color: #FFFFFF;
-        &:hover {}
-
-        &:focus {}
     }
+}
+.hero__button:hover{
+    background-color: #06071B;
 }
 .hero__item{
     font-family: 'Inter';
