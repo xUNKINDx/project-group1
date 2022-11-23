@@ -1,0 +1,26 @@
+.key {
+    color: aqua;
+    text-align: center;
+    margin: 40px 85px 15px 86px;
+}
+.key__lamp {
+    display: flex;
+    justify-content: center;
+}
+.key-text {
+    /* position: absolute; */
+    display: flex;
+    
+max-width: 220px;
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+margin-bottom: 40px;
+}
