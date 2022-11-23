@@ -1,5 +1,5 @@
 .hero{
-    background-color: #06071B;;
+    background-color: #06071B;
 
 
     &__block{
@@ -29,6 +29,8 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
+        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        border-radius: 5px;
         color: #FFFFFF;
         &:hover {}
 
@@ -44,6 +46,6 @@
     color: #FFFFFF;
 
     &::before{
-
+        content: " ";
     }
 }
