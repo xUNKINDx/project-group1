@@ -1,5 +1,7 @@
 .hero{
     background-color: #06071B;
+    margin: 0 auto;
+    
     @media screen and (min-width: 481px) {
         background-image: url(../images/hero-bcg-tablet.png);
     }
