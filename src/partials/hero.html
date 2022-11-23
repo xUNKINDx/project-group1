@@ -1,6 +1,14 @@
 <section class="hero">
     <div class="container hero__block">
-        <img src="./" alt="Мобільний телефон" >
+        <picture>
+            <source srcset="./images/hero-iPhone-dt.png 1x, ./images/hero-iPhone-dt@2x.png 2x"
+                media="(min-width: 1280px)"/>
+            <source srcset="./images/hero-iPhone-tablet.png 1x, ./images/hero-iPhone-tablet@2x.png 2x"
+                media="(max-width: 1199px)"/>
+            <source srcset="./images/hero-iPhone-mobile.png 1x, ./images/hero-iPhone-mobile@2x.png 2x"
+                media="(max-width: 480px)"/>
+            <img src="./images/hero-iPhone-mobile.png" alt="Картинка Айфон ікс">
+        </picture>
         <h1 class="hero__title">Introducing Mobileapp</h1>
         <h2 class="hero__subtitle">Maecenas vitae tellus sapien. Prasent</h2>
         <ul class="hero__list">
