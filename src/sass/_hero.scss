@@ -26,15 +26,26 @@
         position: absolute;
         bottom: -130px;
         right: 195px;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+        @media screen and (min-width:1280px) {
+            bottom: -105px;
+            right: 425px;
+        }
     }
     &__image{
         position: absolute;
         bottom: -200px;
         right: 30px;
-
         @media screen and (max-width: 767px){
             display: none;
         }
+        @media screen and (min-width:1280px){
+            bottom: -225px;
+            right: 55px;
+        }
+        
     }
    
     &__title{
