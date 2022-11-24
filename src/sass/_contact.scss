@@ -1,0 +1,11 @@
+.section__contact {
+  background-color: $bcg-c-black;
+}
+
+.title {
+  color: $c-white;
+
+  @media screen and(max-width:768px) {
+    font-size: 20px;
+  }
+}
