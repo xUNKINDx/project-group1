@@ -1,4 +1,5 @@
 .hero{
+    width: 100%;
     position: absolute;
     background-color: $bcg-c-black;
     background-repeat: no-repeat;
@@ -6,26 +7,36 @@
     background-size: contain;
     margin: 0 auto;
     padding: 182px 0 122px 20px;
+    border-bottom: 60px solid $c-white;
+
     @media screen and (min-width: 481px) and (max-width: 1279px){
         padding: 142px 0 143px 32px ;
     }
     @media screen and (min-width: 481px) and (max-width: 1279px) {
         padding: 243px auto 146px 16px;
     }
-    @media screen and (min-width: 767px) and (max-width: 1279px)  {
-        background-image: url(../images/hero-bcg-tablet.png);
-    }
     &__block{
+        position: relative;
         @media screen and (max-width:767px){
             display: flex;
             flex-direction: column;
         }
     }
+    &__img-decor{
+        position: absolute;
+        bottom: -130px;
+        right: 195px;
+    }
     &__image{
+        position: absolute;
+        bottom: -200px;
+        right: 30px;
+
         @media screen and (max-width: 767px){
             display: none;
         }
     }
+   
     &__title{
         margin-bottom: 12px;
         font-weight: 700;
