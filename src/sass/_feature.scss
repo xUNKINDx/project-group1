@@ -55,10 +55,43 @@ and (max-width: 1279px){
     max-width: 406px;
     height: 280px;
 background-size: contain;
-    background-image: url(./images/featuremob.png);
+    background-image: url(../images/featuremob.png);
      
     background-repeat: no-repeat;
 
     margin-bottom: 40px;
 
 }
+
+
+.amet-list {
+    list-style: none;
+    
+
+   
+    &__title {
+
+        
+        
+        color: yellowgreen;
+
+        &:before {
+            content: "";
+            width: 28px;
+            height: 28px;
+        background-image: url(../images/07\ Gear\ NFT.png);
+    background-size: contain;
+    display: inline-block;
+    margin-right: 12px;
+    transform: translateY(5px);
+
+    }
+}
+
+    &__item {
+        color: green;
+        margin-left: 40px;
+    }
+
+}
+    
