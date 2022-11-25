@@ -3,6 +3,7 @@ $c-black: #000000;
 $c-white: #ffffff;
 $bcg-c-white: #F6F7F7;
 $bcg-c-black: #06071B;
+$linear: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 
 body {
     font-family: 'Inter', sans-serif;
@@ -14,10 +15,6 @@ body {
 
 svg {
     display: block;
-}
-
-textarea {
-    resize: none;
 }
 
 h1,
