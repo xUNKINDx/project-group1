@@ -10,8 +10,8 @@ new Swiper('.swiper', {
     },
     
     autoplay: {
-        delay: 1000,
-        stopOnLastSlide: false,
+        delay: 10000,
+        stopOnLastSlide: true,
         disableOnInteraction: true
     }
 });
