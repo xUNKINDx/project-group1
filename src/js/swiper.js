@@ -10,7 +10,7 @@ new Swiper('.swiper', {
     },
     
     autoplay: {
-        delay: 10000,
+        delay: 3000,
         stopOnLastSlide: true,
         disableOnInteraction: true
     }

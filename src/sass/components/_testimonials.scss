@@ -1,4 +1,5 @@
 .testimonials {
+    margin: 0 auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,6 +13,8 @@
     }
     
     @media screen and (min-width:768px) {
+        padding-bottom: 60px;
+
         background-image: url(../images/testimonials-background1-768.png),
             url(../images/testimonials-background2-768.png),
             url(../images/testimonials-background3-768.png);
