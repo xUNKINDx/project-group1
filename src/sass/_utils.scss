@@ -3,23 +3,18 @@ $c-black: #000000;
 $c-white: #ffffff;
 $bcg-c-white: #F6F7F7;
 $bcg-c-black: #06071B;
+$linear: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 
 body {
-    position: relative;
     font-family: 'Inter', sans-serif;
     color: $c-black;
     background-color: $bcg-c-white;
-    margin: auto;
 
     font-weight: 500;
 }
 
 svg {
     display: block;
-}
-
-textarea {
-    resize: none;
 }
 
 h1,
@@ -34,24 +29,33 @@ ul {
 }
 
 
+
+
+
+
+
+
+
 .container {
     margin: 0 auto;
-    max-width: 1280px;
-    @media screen and (max-width:767px) {
-        max-width: 320px;
-        width: 100%;
+    @media screen and (max-width:479px) {
         padding: 0 20px;
+        width: 100%;
+    }
+    @media screen and (min-width:480px) {
+        padding: 0 20px;
+        width: 480px;
     }
     @media screen and (min-width:768px) {
-        max-width: 768px;
-        width: 100%;
-        padding: 0 32px;    
+        padding: 0 32px;
+        width: 768px;
     }
 
     @media screen and (min-width:1280px) {
         max-width: 1280px;
         width: 100px;
         padding: 0 16px;
+        width: 1280px;
     }
 }
 
@@ -72,17 +76,21 @@ a {
     border-radius: 5px;
 }
 
-
-.container {
-    width: 100%;
-}
-
 .section {
+    @media screen and (max-width:479px) {
+        padding: 40px 0;
+        width: 100%;
+    }
     @media screen and (min-width:480px) {
         padding: 40px 0;
+        width: 480px;
     }
     @media screen and (min-width:768px) {
         padding: 80px 0;
+        width: 768px;
+    }
+    @media screen and (min-width:1280px) {
+        width: 1280px;
     }
 }
 
