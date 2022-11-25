@@ -1,17 +1,23 @@
-.key {
+.main-title {
     color: aqua;
     text-align: center;
     margin: 40px 85px 15px 86px;
 }
-.key__lamp {
-    display: flex;
+.main-title__text {
+    display: block;
+    text-align: center;
     justify-content: center;
-}
-.key-text {
+    margin: auto;
+
+   &--about {
     /* position: absolute; */
-    display: flex;
+    display: block;
+
+    text-align: center;
+    justify-content: center;
+    margin: auto;
     
-max-width: 220px;
+min-width: 220px;
 
 
 
@@ -19,8 +25,40 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 17px;
+line-height: 1.71;
 
 color: #000000;
 margin-bottom: 40px;
+
+@media screen and (max-width: 767px) {
+    background-color: aqua;
+        color: brown;
+    }
+
+@media screen and (min-width: 768px) 
+and (max-width: 1279px){
+    background-color: rgb(66, 147, 152);
+        color: brown;
+    }
+    @media screen and (min-width: 1280px) {
+        background-color: aqua;
+            color: brown;
+        }
+
+
+   }
+}
+
+.box {
+    align-items: center;
+    
+    max-width: 406px;
+    height: 280px;
+background-size: contain;
+    background-image: url(./images/featuremob.png);
+     
+    background-repeat: no-repeat;
+
+    margin-bottom: 40px;
+
 }
