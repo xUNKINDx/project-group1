@@ -3,14 +3,25 @@
     position: absolute;
     background-color: $bcg-c-black;
     background-repeat: no-repeat;
-    background-position-x: right;
     background-size: contain;
     margin: 0 auto;
-    padding: 182px 0 122px 20px;
+    padding: 182px 0 122px;
     border-bottom: 60px solid $c-white;
-    
+
     @media screen and (max-width:767px){
         background-image: url(../images/hero-bcg-mobile.png);
+        background-position-x: right;
+        background-position-y: 60px;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1279px){
+        background-image: url(../images/hero-bcg-tablet.png);
+        background-position-x: center;
+        background-position-y: 80px;
+    }
+    @media screen and (min-width: 1280px){
+        background-image: url(../images/hero-bcg-dt.png);
+        background-position-x: -300px;
+        background-position-y: -25px;
     }
     @media screen and (min-width: 481px) and (max-width: 1279px){
         padding: 142px 0 143px 32px;
