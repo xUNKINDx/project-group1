@@ -8,5 +8,11 @@ new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    
+    autoplay: {
+        delay: 1000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true
+    }
 });
 
