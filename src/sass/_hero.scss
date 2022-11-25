@@ -129,8 +129,11 @@
         color: $c-white;
         z-index: 2;
         &:hover {
-                background: $bcg-c-black;
-        }  
+            background: $bcg-c-black;
+        }
+        &:focus {
+            background: $bcg-c-black;
+        }
     }
 }
 
