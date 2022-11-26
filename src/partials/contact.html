@@ -9,7 +9,9 @@
             class="contact-form__input"
             type="text"
             name="name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
             placeholder="Name"
+            required
           />
         </label>
         <label class="contact-form__label contact-form__label--min">
@@ -17,7 +19,9 @@
             class="contact-form__input"
             type="email"
             name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             placeholder="Email"
+            required
           />
         </label>
         <label class="contact-form__label">
@@ -25,10 +29,14 @@
             class="contact-form__textarea"
             name="comment"
             rows="5"
+            minlength="5" 
             placeholder="Message"
           ></textarea>
         </label>
-        <button type="submit" class="contact-form__btn">SUBMIT</button>
+        <div class="hero__btn-wrapper">
+          <button type="submit" class="button hero__button button--minpadding">SUBMIT</button>
+        </div>
+
       </form>
 
       <div class="contact__content">
