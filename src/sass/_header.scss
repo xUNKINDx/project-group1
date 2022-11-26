@@ -27,6 +27,8 @@
   justify-content: space-between;
   background-image: url(../images/bg-mobile_menu.png);
   background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-size: cover;
   background-color: #06071b;
   transform: translateX(100%);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -56,7 +58,18 @@
   font-size: 32px;
   line-height: 1.2187;
   color: $c-white;
-}
+  }
+  .header__item-menu:hover,
+  .header__item-menu:focus{ 
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+background-clip: text;
+text-fill-color: transparent;
+  }
+  
+
+
 .header__link {
   display: flex;
   position: relative;
