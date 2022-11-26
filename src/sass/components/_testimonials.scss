@@ -1,5 +1,4 @@
 .testimonials {
-    margin: 0 auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,12 +43,9 @@
 
 .testimonials__title {
     max-width: 180px;
-    width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
 
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -88,15 +84,11 @@
     font-size: 14px;
     line-height: 1.7143;
     text-align: center;
-    font-style: normal;
-    font-weight: 500;
 }
 
 .testimonials__response {
     margin-bottom: 40px;
 
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.7143;
     text-align: center;
