@@ -1,0 +1,14 @@
+.video {
+    display: block;
+    background-color: $bcg-c-black;
+    color: $c-white;
+
+
+    &__title {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+}
