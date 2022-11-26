@@ -1,5 +1,5 @@
 .main-title {
-    color: aqua;
+   
     text-align: center;
     margin: 40px 85px 15px 86px;
 }
@@ -11,8 +11,7 @@
 
    &--about {
     /* position: absolute; */
-    display: block;
-
+    
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -32,17 +31,17 @@ margin-bottom: 40px;
 
 @media screen and (max-width: 767px) {
     background-color: aqua;
-        color: brown;
+       
     }
 
 @media screen and (min-width: 768px) 
 and (max-width: 1279px){
     background-color: rgb(66, 147, 152);
-        color: brown;
+       
     }
     @media screen and (min-width: 1280px) {
         background-color: aqua;
-            color: brown;
+           
         }
 
 
@@ -58,10 +57,20 @@ background-size: contain;
     background-image: url(../images/featuremob.png);
      
     background-repeat: no-repeat;
-
+margin-left: 20px;
     margin-bottom: 40px;
 
+ 
 }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url(../images/featuremob@2x.png);
+  }
+}
+
 
 
 .amet-list {
@@ -70,28 +79,51 @@ background-size: contain;
 
    
     &__title {
+        position: relative;
+        padding-left: 39px;
 
         
         
         color: yellowgreen;
 
         &:before {
+            position: absolute;
             content: "";
+            left: 0;
+            top: 0;
             width: 28px;
             height: 28px;
         background-image: url(../images/07\ Gear\ NFT.png);
-    background-size: contain;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    
     display: inline-block;
     margin-right: 12px;
-    transform: translateY(5px);
+    
 
     }
 }
+&__block {
+    max-width: 220px;
+    max-height: 68px;
+    margin-left: 40px;
 
     &__item {
-        color: green;
-        margin-left: 40px;
+        
+        font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.71;
+
+color: #000000;
+        
     }
+
+}
+
+   
 
 }
     
