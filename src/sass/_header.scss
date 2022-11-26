@@ -1,0 +1,36 @@
+.header {
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  padding: 19px 0;
+   @media screen and (max-width:1280px) {
+        padding: 14px 0;
+    }
+}
+.header__link {
+  display: flex;
+  width: 100%;
+}
+.header__logo {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2142;
+  color: $c-white;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  @media screen and (max-width: 768px) {
+       display: none;
+    }
+}
+.header__list-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $c-white;
+}
