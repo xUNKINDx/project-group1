@@ -11,13 +11,16 @@ new Swiper('.swiper', {
     
     autoplay: {
         delay: 3000,
-        stopOnLastSlide: true,
+        stopOnLastSlide: false,
         disableOnInteraction: true
     },
 
     keyboard: {
         enabled: true,
         onlyInViewport: true,
-    }
+    },
+
+    loop: true,
+
 });
 
