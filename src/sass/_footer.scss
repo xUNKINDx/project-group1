@@ -5,6 +5,11 @@
 .section__footer {
   padding: 40px 0;
 }
+.footer__contact{
+   background-image: url(../images/spraying.png);
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+}
 .footer__title {
   text-align: center;
   font-weight: 700;
@@ -13,8 +18,8 @@
   color: $c-white;
 }
 .footer__form {
-    // background-image: url(../images/spraying.png);
-    // transform: rotate(61.27deg);
+ 
+  
   width: 100%;
   display: flex;
   flex-direction: column;
