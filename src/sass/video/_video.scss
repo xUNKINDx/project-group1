@@ -1,14 +1,30 @@
 .video {
     display: block;
     background-color: $bcg-c-black;
+    
+    background-color: blue;
     color: $c-white;
 
 
     &__title {
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-
-        color: #FFFFFF;
+        padding-bottom: 24px;
+        @media screen and (min-width:768px) {
+            padding-bottom: 20px;
+        }
     }
+
+    &__txt {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.21;
+        padding-bottom: 24px;
+        @media screen and (min-width:768px) {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.video-social {
+    display: flex;
+    justify-content: center;
 }
