@@ -3,13 +3,34 @@
   line-height: 1.21;
   color: $c-white;
   background-color: $bcg-c-black;
+  background-image: url('../images/contact-bg-m.png');
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url('../images/contact-bg-m@2x.png');
+    }
 
   @media screen and (min-width: 768px) {
     padding-top: 74px;
+    background-image: url('../images/contact-bg-t.png');
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url('../images/contact-bg-t@2x.png');
+    }
   }
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 79px;
+    background-image: url('../images/contact-bg-d.png');
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url('../images/contact-bg-d@2x.png');
+    }
   }
 }
 
@@ -75,7 +96,7 @@
   text-align: center;
   background-color: antiquewhite;
   margin-bottom: 40px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 28px;
   }
 }
@@ -97,7 +118,9 @@
 }
 
 .address__link {
+  display: block;
   font-style: normal;
+  line-height:1.21;
   font-size: 16px;
   color: $c-white;
 }
@@ -110,19 +133,27 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+@media screen and (min-width:768px) {
+  flex-direction: row;
+  width: 100%;
 }
-@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1280px) {
   .contact-form {
     width: calc(100% - 640px);
-    flex-direction: row;
-    justify-content: flex-end;
+      justify-content: flex-end;
+
   }
 }
 
 .contact-form__label {
   display: block;
   width: 100%;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  @media screen and (min-width:1280px) {
+    margin-bottom: 12px;
+  }
 }
 
 .contact-form__input,
@@ -143,6 +174,13 @@
   }
   .contact-form__label--min:first-child {
     margin-right: 32px;
+  }
+}
+.contact-form__textarea {
+  min-height: 162px;
+  height: 100%;
+  @media screen and (max-with:767px) {
+    min-height: 220px;
   }
 }
 .contact-form__input::placeholder,
