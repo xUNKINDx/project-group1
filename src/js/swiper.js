@@ -13,6 +13,11 @@ new Swiper('.swiper', {
         delay: 3000,
         stopOnLastSlide: true,
         disableOnInteraction: true
+    },
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
     }
 });
 
