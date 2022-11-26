@@ -6,6 +6,8 @@ $bcg-c-black: #06071B;
 $linear: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 
 
+$linear: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+$placeholder: #939EAC;
 
 body {
     font-family: 'Inter', sans-serif;
@@ -29,7 +31,6 @@ ul {
     padding: 0;
     margin: 0;
 }
-
 
 .container {
     margin: 0 auto;
@@ -69,6 +70,7 @@ a {
 }
 
 .section {
+    margin: 0 auto;
     @media screen and (max-width:479px) {
         padding: 40px 0;
         width: 100%;
