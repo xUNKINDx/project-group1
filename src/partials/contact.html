@@ -9,7 +9,7 @@
             class="contact-form__input"
             type="text"
             name="name"
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             placeholder="Name"
             required
           />
@@ -24,19 +24,20 @@
             required
           />
         </label>
-        <label class="contact-form__label">
+        <label class="contact-form__label contact-form__label--textarea">
           <textarea
             class="contact-form__textarea"
             name="comment"
             rows="5"
-            minlength="5" 
+            minlength="5"
             placeholder="Message"
           ></textarea>
         </label>
         <div class="hero__btn-wrapper">
-          <button type="submit" class="button hero__button button--minpadding">SUBMIT</button>
+          <button type="submit" class="button hero__button button--minpadding">
+            SUBMIT
+          </button>
         </div>
-
       </form>
 
       <div class="contact__content">
@@ -62,7 +63,7 @@
           <li class="socials__item">
             <a
               href="#"
-              class="socials__link"
+              class="socials__link socials__link--twitter"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -74,7 +75,7 @@
           <li class="socials__item">
             <a
               href="#"
-              class="socials__link footer__socials__link"
+              class="socials__link socials__link--instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -88,11 +89,11 @@
         <address class="address">
           <ul class="address__list">
             <li class="address-item">
-              <a href="tel:#" class="address__link"> +xx-xxxx-xxxx-xx </a>
+              <a href="tel:#" class="address__link address__link--tel">+xx-xxxx-xxxx-xx</a>
             </li>
             <li class="address-item">
-              <a href="mailto:goIteens@gmail.com" class="address__link">
-                goIteens@gmail.com
+              <a href="mailto:goIteens@gmail.com" class="address__link"
+                >goIteens@gmail.com
               </a>
             </li>
           </ul>
