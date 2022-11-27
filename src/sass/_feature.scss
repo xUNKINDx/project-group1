@@ -12,54 +12,33 @@
     max-width: 280px;
     font-size: 14px;
     line-height: 1.42;
-   
-@media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     background-color: aqua;
-       
     }
-
-@media screen and (min-width: 768px) 
-and (max-width: 1279px){
+    @media screen and (min-width: 768px) 
+    and (max-width: 1279px){
     background-color: rgb(66, 147, 152);
-       
     }
     @media screen and (min-width: 1280px) {
-        background-color: aqua;
-           
-        }
-
-
-   }
-
-
+    background-color: aqua;
+    }
+}
 .box {
-    align-items: center;
-    
     max-width: 406px;
     // height: 280px;
-background-size: contain;
+    background-size: contain;
     background-image: url(../images/featuremob.png);
-     
     background-repeat: no-repeat;
-
     margin-bottom: 40px;
-
- 
-}
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .box {
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/featuremob@2x.png);
-  }
+    }
 }
-
-
-
 .amet-list {
-    list-style: none;
-
+    
     &__block {
     
         margin-left: 40px;
