@@ -4,40 +4,15 @@
     ;
 
 }
-
-
 .main-title {
-   
-    text-align: center;
     margin: 40px auto;
 }
 .main-title__text {
-    display: flex;
     text-align: center;
-    justify-content: center;
-    margin: auto;
-
-   &--about {
-    /* position: absolute; */
-    
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    
-max-width: 280px;
-
-
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.42;
-
-
-color: #000000;
-margin-bottom: 40px;
-
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 1.42;
+   
 @media screen and (max-width: 767px) {
     background-color: aqua;
        
@@ -55,7 +30,7 @@ and (max-width: 1279px){
 
 
    }
-}
+
 
 .box {
     align-items: center;
