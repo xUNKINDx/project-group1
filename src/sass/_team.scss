@@ -116,7 +116,7 @@
     }
         &--image {
             display: block;
-        -webkit-filter: drop-shadow(-3px 3px 36px rgba(1, 137, 182, 0.3));
+        box-shadow: drop-shadow(-3px 3px 36px rgba(1, 137, 182, 0.3));
         border-radius: 10px;
         @media screen and(min-width: 480px) {
             width: 248px;
