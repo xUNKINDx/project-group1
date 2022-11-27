@@ -5,6 +5,7 @@ $bcg-c-white: #F6F7F7;
 $bcg-c-black: #06071B;
 $linear: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 $placeholder: #939EAC;
+// $h-f: transform background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 body {
     font-family: 'Inter', sans-serif;
@@ -68,6 +69,25 @@ a {
     margin: 0;
     border-radius: 5px;
 }
+
+// .button-hf{
+//     position: relative;
+//     padding: 12px 60px 11px 61px;
+//     border: 0px;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.1875;
+//     background: transparent;
+//     border-radius: 5px;
+//     color: $c-white;
+//     z-index: 2;
+//     &:hover {
+//         background: $bcg-c-black;
+//     }
+//     &:focus {
+//         background: $bcg-c-black;
+//     }
+// }
 
 .section {
     margin: 0 auto;
