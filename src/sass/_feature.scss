@@ -1,10 +1,18 @@
+.feature {
+    width: 100%;
+    background: linear-gradient(82.31deg, rgba(0, 197, 235, 0.25) -16.63%, rgba(61, 153, 241, 0.155) 28.79%, rgba(181, 68, 254, 0.25) 84.76%);
+    ;
+
+}
+
+
 .main-title {
    
     text-align: center;
     margin: 40px auto;
 }
 .main-title__text {
-    display: block;
+    display: flex;
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -16,7 +24,7 @@
     justify-content: center;
     margin: auto;
     
-min-width: 220px;
+max-width: 280px;
 
 
 
@@ -24,7 +32,8 @@ font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 1.71;
+line-height: 1.42;
+
 
 color: #000000;
 margin-bottom: 40px;
@@ -75,18 +84,14 @@ background-size: contain;
 
 .amet-list {
     list-style: none;
+
+    &__block {
     
-
-   
-    &__title {
-        position: relative;
-        padding-left: 39px;
-        margin-bottom: 13px;
-
-        
-        
-        color: yellowgreen;
-
+        margin-left: 40px;
+        margin-bottom: 24px;
+        max-width: 220px;
+        height: 68px;
+    
         &:before {
             position: absolute;
             content: "";
@@ -102,28 +107,41 @@ background-size: contain;
     display: inline-block;
     margin-right: 12px;
     
-
+    
     }
-}
-&__block {
-    max-width: 220px;
-    max-height: 68px;
-    margin-left: 40px;
-    margin-bottom: 24px;
+    
 
+
+    
+
+   
+    &__title {
+        position: relative;
+        padding-left: 39px;
+        margin-bottom: 13px;
+
+        
+        
+        color: yellowgreen;
+
+        
+}
+
+}
     &__item {
+
+        
         
         font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
+line-height: 100%;
 line-height: 1.71;
-
 color: #000000;
         
     }
 
-}
 
    
 
