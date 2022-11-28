@@ -48,7 +48,7 @@
             content: "";
             width: 28px;
             height: 28px;
-            background-image: url(../images/07\ Gear\ NFT.png);
+            background-image: url(../images/gearnft.png);
             background-repeat: no-repeat;
             background-size: contain;
             display: inline-block;
@@ -68,6 +68,6 @@
     }
 
     &__text {
-        border-color: aquamarine;
+        line-height: 1.2142;
     } 
 }

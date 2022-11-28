@@ -484,7 +484,7 @@ a {
   content: "";
   width: 28px;
   height: 28px;
-  background-image: url(../images/07\ Gear\ NFT.png);
+  background-image: url(../images/gearnft.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -501,5 +501,5 @@ a {
   line-height: 1.5;
 }
 .amet-list__text {
-  border-color: aquamarine;
+  line-height: 1.2142;
 }/*# sourceMappingURL=index.css.map */
