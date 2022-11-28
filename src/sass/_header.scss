@@ -1,5 +1,9 @@
 .header {
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  position: absolute;
+ margin-top: 20px;
+  z-index: 7;
+background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
+backdrop-filter: blur(17.5px);
   width: 100%;
 }
 .header__btn {
@@ -17,21 +21,20 @@
 }
 .header__menu {
   position: fixed;
-  overflow-y: auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
   padding: 16px 20px 16px 21px;
-  z-index: 999;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
   background-image: url(../images/bg-mobile_menu.png);
   background-repeat: no-repeat;
   background-position-y: 20px;
   background-size: cover;
-  background-color: #06071b;
+  background-color: $bcg-c-black;
   transform: translateX(100%);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 .header__menu.is-open {
   transform: translateX(0);
@@ -58,17 +61,15 @@
   font-size: 32px;
   line-height: 1.2187;
   color: $c-white;
-  }
-  .header__item-menu:hover,
-  .header__item-menu:focus{ 
-    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-background-clip: text;
-text-fill-color: transparent;
-  }
-  
-
+}
+.header__item-menu:hover,
+.header__item-menu:focus {
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 .header__link {
   display: flex;
@@ -103,4 +104,12 @@ text-fill-color: transparent;
   font-size: 12px;
   line-height: 1.25;
   color: $c-white;
+}
+.header__item:hover,
+.header__item:focus {
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
