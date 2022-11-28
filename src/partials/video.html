@@ -14,7 +14,7 @@
             href="https://www.youtube.com/watch?v=yUKRkPKg5_U&ab_channel=Apple"
             class="video-social__link"
           >
-            <svg class="video-social__logo" width="60px" heigh="60px">
+            <svg class="video-social__logo" width="60px" height="60px">
               <use href="./images/SVG/symbol-defs.svg#apple"></use>
             </svg>
           </a>
@@ -24,29 +24,28 @@
             href="https://www.youtube.com/watch?v=9MZzbVw7yJ8&ab_channel=THEROCO"
             class="video-social__link"
           >
-            <svg class="video-social__logo" width="60px" heigh="60px">
+            <svg class="video-social__logo" width="60px" height="60px">
               <use href="./images/SVG/symbol-defs.svg#android"></use>
             </svg>
           </a>
         </li>
       </ul>
     </div>
-    <picture>
+    <picture class="video__iphone">
       <source
-        srcset="./images/iphone-x.png 1x, ./images/iphone-x.png 2x"
+        srcset="./images/iphone-x-mob.png 1x, ./images/iphone-x-mob@2x.png 2x"
         media="(max-width:767px)"
-      />
-      <source
-        srcset="./images/video__iphone-x-tablet.png 1x, ./images/video__iphone-x-tablet@2x.png 2x"
-        media="(min-width:768px)"
       />
       <source
         srcset="./images/video__iphone-x-pc.png 1x, ./images/video__iphone-x-pc@2x.png 2x"
         media="(min-width:1280px)"
       />
+      <source
+        srcset="./images/video__iphone-x-tablet.png 1x, ./images/video__iphone-x-tablet@2x.png 2x"
+        media="(min-width:768px)"
+      />
       <img
         src="./images/iphone-x.png"
-        class="video__iphone"
         alt="iphone X"
       />
     </picture>
