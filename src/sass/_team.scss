@@ -14,7 +14,6 @@
     text-align: center;
     padding-top: 0;
     }
-
     &--about {
     font-weight: 500;
     font-size: 16px;
@@ -25,7 +24,6 @@
     max-width: 886px;  
     margin: 0 auto;
     } 
-
     &--list {
     display: flex;
     flex-direction: row;
@@ -51,7 +49,7 @@
         padding-top: 16px;
         &--first {
         background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
-        }
+        }        
         &--second {
         background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
         }
