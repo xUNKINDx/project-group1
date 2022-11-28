@@ -1,10 +1,20 @@
 .video {
     display: block;
+    position: relative;
     background-color: $bcg-c-black;
+    background-repeat: no-repeat;
+    // background-size: contain;
     
-    background-color: blue;
+    // background-color: blue;
     color: $c-white;
-
+    @media screen and (min-width:768px) {
+        background-image: url(../images/video__decor-tablet.png);
+        background-position-x: top;
+        background-position-y: left;
+    }
+    @media screen and (min-width:1280px) {
+        background-image: url(../images/video__decor-pc.png);
+    }
 
     &__title {
         padding-bottom: 24px;
@@ -19,7 +29,14 @@
         line-height: 1.21;
         padding-bottom: 24px;
         @media screen and (min-width:768px) {
+            font-size: 16px;
+            line-height: 1.19;
             padding-bottom: 20px;
+        }
+    }
+    &__decor {
+        @media screen and (max-width:767px) {
+            display: none;
         }
     }
 }

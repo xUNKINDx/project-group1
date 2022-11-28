@@ -1,4 +1,4 @@
-<section class="section">
+<section>
   <div class="container video">
     <h2 class="title video__title">WATCH THE VIDEO</h2>
     <p class="video__txt">
@@ -23,11 +23,19 @@
             </a>
         </li>
     </ul>
-    <picture>
-        <img src="./images/light.png" alt="light">
-    </picture>
-    <picture>
-        <img src="./images/iphone-x.png" alt="ifone X">
+    <!-- <picture class="video__decor">
+        <source srcset="./images/video__decor-tablet.png 1x, ./images/video__decor-tablet@2x.png 2x"
+        @media="min-width:768px">
+        <source srcset="./images/video__decor-pc.png 1x, ./images/video__decor-pc@2x.png 2x"
+        @media="min-width:1280px">
+        <img src="./images/light.png" alt="decor">
+    </picture> -->
+    <picture class="video__iphone">
+        <source srcset="./images/video__iphone-x-tablet.png 1x, ./images/video__iphone-x-tablet@2x.png 2x"
+        @media="min-width:768px">
+        <source srcset="./images/video__iphone-x-pc.png 1x, ./images/video__iphone-x-pc@2x.png 2x"
+        @media="min-width:1280px">
+        <img src="./images/iphone-x.png" alt="iphone X">
     </picture>
   </div>
 </section>
