@@ -9,8 +9,8 @@
   );
   backdrop-filter: blur(17.5px);
   width: 100%;
-}
-.header__btn {
+
+  &__btn {
   position: absolute;
   top: 24;
   right: 0;
@@ -23,7 +23,8 @@
     display: none;
   }
 }
-.header__menu {
+
+&__menu {
   margin-top: -20px;
   position: fixed;
   top: 0;
@@ -40,11 +41,10 @@
   transform: translateX(100%);
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.header__menu.is-open {
+&__menu.is-open {
   transform: translateX(0);
 }
-
-.header__menu-close {
+&__menu-close {
   background: transparent;
   position: absolute;
   right: 8px;
@@ -53,34 +53,33 @@
   height: 40px;
   border: 0;
 }
-.header__list-menu {
+&__list-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   padding-top: 50px;
 }
-.header__item-menu {
+&__item-menu {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.2187;
   color: $c-white;
 }
-.header__item-menu:hover,
-.header__item-menu:focus {
+&__item-menu:hover,
+&__item-menu:focus {
   background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
-
-.header__link {
+&__link {
   display: flex;
   position: relative;
   width: 100%;
 }
-.header__logo {
+&__logo {
   font-weight: 400;
   font-size: 28px;
   line-height: 1.2142;
@@ -90,7 +89,7 @@
     padding: 14px 0;
   }
 }
-.header__nav {
+&__nav {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -98,22 +97,36 @@
     display: none;
   }
 }
-.header__list-item {
+&__list-item {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.header__item {
+&__item {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   color: $c-white;
 }
-.header__item:hover,
-.header__item:focus {
+&__item:hover,
+&__item:focus {
   background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
