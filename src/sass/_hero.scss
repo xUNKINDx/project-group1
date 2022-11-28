@@ -7,11 +7,13 @@
     padding: 182px 0 122px;
 
     @media screen and (max-width:767px){
+        max-width: 480px;
         background-image: url(../images/hero-bcg-mobile.png);
         background-position-x: right;
         background-position-y: 60px;
     }
     @media screen and (min-width: 768px) and (max-width: 1279px){
+        width: 768px;
         background-image: url(../images/hero-bcg-tablet.png);
         background-position-x: center;
         background-position-y: 80px;
@@ -19,6 +21,7 @@
         border-bottom: 60px solid $c-white;
     }
     @media screen and (min-width: 1280px){
+        width: 1280px;
         background-image: url(../images/hero-bcg-dt.png);
         background-position-x: -300px;
         background-position-y: -25px;
