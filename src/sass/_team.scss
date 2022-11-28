@@ -6,6 +6,17 @@
     padding-top: 0;
     padding-bottom: 0;
     background-image: url(../images/team-bg.png);
+        @media screen and(max-width: 767px) {
+            width: calc((100% / 1) - 15px);
+        }
+        @media screen and(min-width: 768px) {
+            width: calc((100% - 64px) / 2);
+            margin-bottom: 8px;
+        }
+        @media screen and(min-width: 1280px) {
+            width: calc((100% - 39px) / 4);
+        }
+
     &--title {
     font-weight: 700;
     font-size: 20px;
@@ -29,9 +40,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-        @media screen and(max-width: 767px) {    
+          
         gap: 24px;
-        }
+        
         @media screen and(min-width: 768px) {
         gap: 32px;
         }
