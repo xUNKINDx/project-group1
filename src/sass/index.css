@@ -23,4 +23,192 @@
   background-image: url("../images/logo.png");
   background-size: cover;
   background-position: center;
+}
+
+.team__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgb(245, 244, 250);
+  background-position: center;
+}
+.team__wrap--title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  padding-top: 80px;
+}
+.team__wrap--about {
+  text-align: center;
+}
+
+.team__cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+@media screen and (min-width: 480px) {
+  .team__cards {
+    gap: calc(100% - 15px);
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__cards {
+    width: calc((100% - 30px) / 2);
+    gap: 30px;
+    height: 1051px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team__cards {
+    width: calc((100% - 90px) / 4);
+    height: 428px;
+  }
+}
+.team__cards__card {
+  width: 100%;
+}
+.team__cards__card--box {
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .team__cards__card--image {
+    width: 248px;
+    height: 303px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__cards__card--image {
+    width: 296px;
+    height: 299px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .team__cards__card--image {
+    width: 264px;
+    height: 260px;
+  }
+}
+.team__cards__card--title {
+  display: block;
+}
+.team__cards__card--description {
+  padding-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  background-color: #F6F7F7;
+  font-weight: 500;
+}
+
+svg {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  outline: 0.5px solid red;
+  width: 100%;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    padding: 0 20px;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 16px;
+    width: 1280px;
+  }
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding: 40px 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 40px 0;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 80px 0;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    width: 1280px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
 }/*# sourceMappingURL=index.css.map */
