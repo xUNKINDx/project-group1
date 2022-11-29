@@ -66,6 +66,10 @@
     &__iphone {
         max-width: 501px;
         width: 100%;
+
+        @media screen and (min-width:1280px) {
+            background-image: url(../images/video__bg-pc.png);
+        }
     }
 }
 
