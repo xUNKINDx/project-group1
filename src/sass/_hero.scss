@@ -18,7 +18,7 @@
         background-position-x: center;
         background-position-y: 80px;
         padding: 142px 0 143px;
-        border-bottom: 60px solid $c-white;
+        border-bottom: 60px solid $bcg-c-white;
     }
     @media screen and (min-width: 1280px){
         width: 1280px;
@@ -26,7 +26,7 @@
         background-position-x: -300px;
         background-position-y: -25px;
         padding: 243px 0 146px;
-        border-bottom: 60px solid $c-white;
+        border-bottom: 60px solid $bcg-c-white;
     }
     &__block{
         position: relative;
@@ -55,7 +55,7 @@
             display: none;
         }
         @media screen and (min-width:1280px){
-            bottom: -225px;
+            bottom: -243px;
             right: 55px;
         }
         
