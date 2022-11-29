@@ -1,18 +1,21 @@
 .features {
     // background-image: url(../images/features-up.png) ;
-    background-image: url(../images/features-down.png);
+    background-image: url(../images/features-bcg-mobile.png);
+    background-position-y: -500px;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0px 194px;
+    background-size: cover;
+    
     // background-position: 649px -213px;
-  width: 100%;
   @media screen and (min-width: 768px) {
+    background-image: none;
     padding-top: 100px;
     padding-bottom: 80px;
   }
 
   @media screen and (min-width: 1280px) {
+    background-image: url(../images/features-bcg-dt.png);
     padding-bottom: 100px;
+    background-position: top;
   }
 
   
