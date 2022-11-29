@@ -1,0 +1,139 @@
+.header {
+  position: absolute;
+  margin-top: 26px;
+  z-index: 7;
+  background: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
+  backdrop-filter: blur(17.5px);
+  
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  @media screen and (max-width:479px) {
+    width: 100%;
+  }
+  
+
+  &__btn {
+  position: absolute;
+  top: 24;
+  right: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+&__menu {
+  margin-top: -20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  padding: 16px 20px 16px 21px;
+  background-image: url(../images/bg-mobile_menu.png);
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-size: cover;
+  background-color: $bcg-c-black;
+  transform: translateX(100%);
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+&__menu.is-open {
+  transform: translateX(0);
+}
+&__menu-close {
+  background: transparent;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+&__list-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 50px;
+}
+&__item-menu {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2187;
+  color: $c-white;
+}
+&__item-menu:hover,
+&__item-menu:focus {
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+&__link {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+&__logo {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2142;
+  color: $c-white;
+  padding: 19px 0;
+  @media screen and (max-width: 768px) {
+    padding: 14px 0;
+  }
+}
+&__nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+&__list-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+&__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $c-white;
+}
+&__item:hover,
+&__item:focus {
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
