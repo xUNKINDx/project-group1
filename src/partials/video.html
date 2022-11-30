@@ -31,7 +31,7 @@
         </li>
       </ul>
     </div>
-    <picture class="video__iphone">
+    <picture class="video__iphone is-hidden">
       <source
         srcset="./images/iphone-x-mob.png 1x, ./images/iphone-x-mob@2x.png 2x"
         media="(max-width:767px)"
@@ -51,4 +51,10 @@
     </picture>
   </div>
 </section>
-
+<div class="video__wrap is-hidden">
+  <div class="video__window">
+    <button class="video__close-btn" data-modal-close type="button"></button>
+    <iframe class="video__youtube" src="https://www.youtube.com/watch?v=9MZzbVw7yJ8&ab_channel=THEROCO" title="YouTube video player" rel="noopener noreferrer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+</div>
