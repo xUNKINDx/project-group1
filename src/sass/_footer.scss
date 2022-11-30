@@ -1,0 +1,25 @@
+.footer {
+  border-top: 1px solid #FFFFFF;;
+  background-color: $bcg-c-black;
+}
+
+.footer__text-down {
+  padding: 22px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2142;
+  color: $c-white;
+  
+  
+  @media screen and (max-width: 358px) {
+    max-width: 193px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 22px 0 28px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 22px 0 21px;
+  }
+
+}

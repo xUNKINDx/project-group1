@@ -1,0 +1,104 @@
+<section class="section section__contact">
+  <div class="container">
+    <h3 class="title title--contact">CONTACT US</h3>
+
+    <div class="contact-wrap">
+      <form class="contact-form">
+        <label class="contact-form__label contact-form__label--min">
+          <input
+            class="contact-form__input"
+            type="text"
+            name="name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            placeholder="Name"
+            required
+          />
+        </label>
+        <label class="contact-form__label contact-form__label--min">
+          <input
+            class="contact-form__input"
+            type="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="Email"
+            required
+          />
+        </label>
+        <label class="contact-form__label contact-form__label--textarea">
+          <textarea
+            class="contact-form__textarea"
+            name="comment"
+            rows="5"
+            minlength="5"
+            placeholder="Message"
+          ></textarea>
+        </label>
+        <div class="btn-wrapper">
+          <button type="submit" class="button button-hf button--minpadding">
+            SUBMIT
+          </button>
+        </div>
+      </form>
+
+      <div class="contact__content">
+        <h2 class="contact__subtitle">Get in touch with us</h2>
+        <p class="contact__text">
+          Nunc urna est, tristique et varius at, pharetra nec enim. Quisque
+          rhoncus lacus fringilla nulla sollicitudin tristique.
+        </p>
+
+        <ul class="icon icon--social">
+          <li class="icon__item icon__item--social">
+            <a
+              href="#"
+              class="icon__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon__svg icon__svg--social">
+                <use href="./images/SVG/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon__item icon__item--social">
+            <a
+              href="#"
+              class="icon__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon__svg icon__svg--social">
+                <use href="./images/SVG/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon__item icon__item--social">
+            <a
+              href="#"
+              class="icon__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class= "icon__svg icon__svg--social">
+                <use href="./images/SVG/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <address class="address">
+          <ul class="address__list">
+            <li class="address-item">
+              <a href="tel:#" class="address__link address__link--tel">+xx-xxxx-xxxx-xx</a>
+            </li>
+            <li class="address-item">
+              <a href="mailto:goIteens@gmail.com" class="address__link"
+                >goIteens@gmail.com
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </div>
+</section>
