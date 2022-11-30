@@ -10,20 +10,24 @@
       </p>
       <ul class="icon video__icon">
         <li class="icon__item icon__item--video">
-          <a href="#"
+          <a
+            href="#"
             class="icon__link"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <svg class="icon__svg icon__svg--video">
               <use href="./images/SVG/symbol-defs.svg#android"></use>
             </svg>
           </a>
         </li>
         <li class="icon__item icon__item--video">
-          <a href="#"
+          <a
+            href="#"
             class="icon__link"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <svg class="icon__svg icon__svg--video">
               <use href="./images/SVG/symbol-defs.svg#apple"></use>
             </svg>
@@ -31,33 +35,46 @@
         </li>
       </ul>
     </div>
-    <div class="video__img-iphone" data-modal-open>
-      <picture class="video__iphone is-hidden">
+    <div class="video__img-iphone" data-modal-open-video>
+      <picture class="video__iphone">
         <source
           srcset="./images/iphone-x-mob.png 1x, ./images/iphone-x-mob@2x.png 2x"
           media="(max-width:767px)"
         />
         <source
-          srcset="./images/video__iphone-x-pc.png 1x, ./images/video__iphone-x-pc@2x.png 2x"
+          srcset="
+            ./images/video__iphone-x-pc.png    1x,
+            ./images/video__iphone-x-pc@2x.png 2x
+          "
           media="(min-width:1280px)"
         />
         <source
-          srcset="./images/video__iphone-x-tablet.png 1x, ./images/video__iphone-x-tablet@2x.png 2x"
+          srcset="
+            ./images/video__iphone-x-tablet.png    1x,
+            ./images/video__iphone-x-tablet@2x.png 2x
+          "
           media="(min-width:768px)"
         />
-        <img
-          src="./images/iphone-x.png"
-          alt="iphone X"
-        />
+        <img src="./images/iphone-x.png" alt="iphone X" />
       </picture>
     </div>
   </div>
 </section>
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-video>
   <div class="video-modal">
-    <button class="video__close-btn" data-modal-close type="button"><img src="./images/SVG/ep_close.svg" alt="close"></button>
+    <button class="video__close-btn" data-modal-close-video type="button">
+      <img src="./images/SVG/ep_close.svg" alt="close" />
+    </button>
     <div class="video-modal__iframe">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/FT3ODSg1GFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/FT3ODSg1GFE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
 </div>
