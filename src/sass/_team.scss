@@ -1,0 +1,162 @@
+.team {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    background-image: url(../images/team-bg-mob.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    
+
+    @media screen and (min-width:768px) {
+        background-image: url(../images/team-bg-tablet.png);
+        background-position-x: right;
+
+    }
+
+    @media screen and (min-width:1280px) {
+        background-image: url(../images/team-bg.png);
+        background-position-y: -90px;
+    }
+
+    &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $c-black;
+    text-align: center;
+    padding-top: 0;
+        }
+    &__about {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    max-width: 886px; 
+    @media screen and (min-width: 768px) {
+        margin: 40px auto;
+        font-size: 16px;
+        line-height: 1.5;
+        } 
+    @media screen and (min-width: 1280px) {
+        margin: 80px auto;
+        } 
+    } 
+    &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    gap: 24px;
+        @media screen and(min-width: 768px) {
+        gap: 32px;
+        }
+    }
+}
+
+.team-card {
+    display: block;      
+    backdrop-filter: blur(17.5px);
+    height: auto; 
+        @media screen and(max-width: 767px) {
+        width: 280px;
+        height: 413px;
+        border-radius: 15px;
+        padding-top: 16px;
+        &--first {
+        background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+        }        
+        &--second {
+        background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+        }
+        &--third {
+        background: linear-gradient(176.56deg, rgba(0, 197, 235, 0.5) 4.33%, rgba(181, 68, 254, 0.5) 116.56%), #06071B;
+        }
+        &--fourth {
+        background: linear-gradient(313.81deg, rgba(0, 197, 235, 0.5) -7.83%, rgba(181, 68, 254, 0.5) 83.61%), #06071B;
+        }
+    }
+        @media screen and(min-width: 768px) {
+        width: 336px;
+        height: 409px;
+        padding-top: 16px;
+        border-radius: 20px;
+        &--first {
+        background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+        }
+        &--second {
+        background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+        }
+        &--third {
+        background: linear-gradient(176.56deg, rgba(0, 197, 235, 0.5) 4.33%, rgba(181, 68, 254, 0.5) 116.56%), #06071B;
+        }
+        &--fourth {
+        background: linear-gradient(313.81deg, rgba(0, 197, 235, 0.5) -7.83%, rgba(181, 68, 254, 0.5) 83.61%), #06071B;
+        }
+    }
+        @media screen and(min-width: 1280px) {
+        width: 288px;
+        height: 364px;
+        border-radius: 15px;
+        padding-top: 14px;
+        &--first {
+        background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+        }
+        &--second {
+        background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+        }
+        &--third {
+        background: linear-gradient(176.56deg, rgba(0, 197, 235, 0.5) 4.33%, rgba(181, 68, 254, 0.5) 116.56%), #06071B;
+        }
+        &--fourth {
+        background: linear-gradient(313.81deg, rgba(0, 197, 235, 0.5) -7.83%, rgba(181, 68, 254, 0.5) 83.61%), #06071B;
+        }
+    }
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__image {
+            display: block;
+        box-shadow: drop-shadow(-3px 3px 36px rgba(1, 137, 182, 0.3));
+        border-radius: 10px;
+        @media screen and(min-width: 480px) {
+            width: 248px;
+            height: 303px;
+            }
+        @media screen and(min-width: 768px) {
+            width: 296px;
+            height: 299px;
+            }
+        @media screen and(min-width: 1280px) {
+            width: 264px;
+            height: 260px;    
+            }
+        }
+        &__title {    
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: $c-white;
+            padding-top: 20px;
+            margin-bottom: 12px;
+        }
+        &__description {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.71;  
+            color: $c-white;
+        }
+    }
+
