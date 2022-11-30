@@ -138,7 +138,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        background: $linear;
     }
     .icon__item--social{
         width: 40px;
@@ -150,14 +150,14 @@
         align-items: center;
         width: calc(100% - 2px);
         height: calc(100% - 2px);
-        color: white;
+        color: $c-white;
         border-radius: 50%;
-        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        background: $linear;
     }
     .icon__link:hover,
     .icon__link:focus{
-    color: black;
-    background:black;
+    color: $c-black;
+    background: $c-black;
     }
     .icon__svg{
     fill: currentColor;
