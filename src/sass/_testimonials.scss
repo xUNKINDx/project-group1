@@ -9,34 +9,33 @@
         (min-resolution: 2dppx) {
             background-image: url(../images/testimonials-background1-320@2x.png),
                 url(../images/testimonials-background2-320@2x.png);
+                background-position-y: -115px;
     }
     
     @media screen and (min-width:768px) {
         padding-bottom: 60px;
 
         background-image: url(../images/testimonials-background1-768.png),
-            url(../images/testimonials-background2-768.png),
-            url(../images/testimonials-background3-768.png);
+            url(../images/testimonials-background2-768.png);
+            background-position-y: -145px;
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url(../images/testimonials-background1-768@2x.png),
-                    url(../images/testimonials-background2-768@2x.png),
-                    url(../images/testimonials-background3-768@2x.png);
+                    url(../images/testimonials-background2-768@2x.png);
+                    background-position-y: -145px;
         }
     }
 
         @media screen and (min-width:1280px) {
             background-image: url(../images/testimonials-background1-1280.png),
-                url(../images/testimonials-background2-1280.png),
-                url(../images/testimonials-background3-1280.png);
+                url(../images/testimonials-background2-1280.png);
     
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url(../images/testimonials-background1-1280@2x.png),
-                    url(../images/testimonials-background2-1280@2x.png),
-                    url(../images/testimonials-background3-1280@2x.png);
+                    url(../images/testimonials-background2-1280@2x.png);
             }
         }
 }

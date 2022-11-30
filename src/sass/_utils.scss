@@ -4,7 +4,7 @@ $bcg-c-white: #F6F7F7;
 $bcg-c-black: #06071B;
 $linear: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 $placeholder: #939EAC;
-// $h-f: transform background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+$h-f: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 body {
   font-family: 'Inter', sans-serif;
