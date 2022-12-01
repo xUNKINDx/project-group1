@@ -72,27 +72,6 @@ a {
   margin: 0;
   border-radius: 5px;
 }
-.btn-wrapper {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
-    @media screen and (max-width:767px){
-        align-self: center;
-    }
-    &:after {
-            content: "";
-            position: absolute;
-            background: $linear;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            border-radius: 5px;
-    }
-}
-
 
 .button-hf{
     position: relative;
@@ -113,22 +92,33 @@ a {
     }
 }
 
+.btn-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  @media screen and (max-width:767px){
+      align-self: center;
+  }
+  &:after {
+          content: "";
+          position: absolute;
+          background: $linear;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 5px;
+  }
+}
+
 .section {
   margin: 0 auto;
-  @media screen and (max-width: 479px) {
-    padding: 40px 0;
-    width: 100%;
-  }
-  @media screen and (min-width: 480px) {
-    padding: 40px 0;
-    width: 480px;
-  }
+  padding: 40px 0;
+  width: 100%;
   @media screen and (min-width: 768px) {
     padding: 80px 0;
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
   }
 }
 

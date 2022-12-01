@@ -281,6 +281,10 @@
     }
 }
 
+.modal--button {
+    margin: 0 auto;
+}
+
 .modal__close-button {
     position: absolute;
     cursor: pointer;
@@ -289,9 +293,16 @@
     border: 0;
     padding: 3px;
     background: transparent;
+
     border-radius: 50%;
 
     &:hover {
         background: $linear;
     }
+
+}
+
+.modal__download {
+    display: flex;
+
 }

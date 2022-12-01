@@ -1,7 +1,8 @@
 .header {
   position: absolute;
-  margin-top: 26px;
+  top: 20px;
   z-index: 7;
+  width: 100%;
   background: linear-gradient(
     90.03deg,
     rgba(0, 197, 235, 0.3) -1.97%,
@@ -10,11 +11,14 @@
   backdrop-filter: blur(17.5px);
   
   left: 50%;
-  top: 0;
   transform: translateX(-50%);
   @media screen and (max-width:479px) {
     width: 100%;
   }
+  @media screen and (min-width:1280px) {
+    top: 26px;
+  }
+  
   
 
   &__btn {
