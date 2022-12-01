@@ -4,38 +4,46 @@
         <h2 class="modal__title">Download</h2>
         <ul class="download">
             <li class="download__item">
-                <button type="button" class="download__free button">
-                    <img src='./images/SVG/SVG/modal_fa-solid_file-download.svg' alt='download-icon' width="80" height="106"
-                        class="download__icon">
-                    <h3 class="download__title">Download free plan</h3>
-                    <ul class="download__sub-list">
-                        <li class="download__sub-item">
-                            <p class="download__description">Donec posuere augue venenatis, aliquet</p>
-                        </li>
-                        <li class="download__sub-item">
-                            <p class="download__description">Donec posuere augue venenatis, aliquet</p>
-                        </li>
-                    </ul>
-                </button>
+                <input type="checkbox" class="download__checkbox" id="free">
+                <label class="download__label" for="free">
+                    <div class="download__border-wrap">
+                        <button type="button" class="download__free button">
+                            <img src='./images/SVG/SVG/modal_fa-solid_file-download.svg' alt='download-icon' width="80" height="106"
+                                class="download__icon">
+                            <h3 class="download__title">Download free plan</h3>
+                            <ul class="download__sub-list">
+                                <li class="download__sub-item">
+                                    <p class="download__description">Donec posuere augue venenatis, aliquet</p>
+                                </li>
+                                <li class="download__sub-item">
+                                    <p class="download__description">Donec posuere augue venenatis, aliquet</p>
+                                </li>
+                            </ul>
+                        </button>
+                    </div>
+                </label>
             </li>
             <li class="download__item">
-                <div class="download__border-wrap">
-                    <button type="button" class="download__pay button">
-                        <img src='./images/SVG/SVG/modal_fa-solid_file-download.svg' alt='download-icon' class="download__icon">
-                        <h3 class="download__title">Download for 20$</h3>
-                        <ul class="download__sub-list">
-                            <li class="download__sub-item">
-                                <p class="download__description">Donec posuere augue venenatis, aliquet</p>
-                            </li>
-                            <li class="download__sub-item">
-                                <p class="download__description">Donec posuere augue venenatis, aliquet</p>
-                            </li>
-                            <li class="download__sub-item">
-                                <p class="download__description">Donec posuere augue venenatis, aliquet</p>
-                            </li>
-                        </ul>
-                    </button>
-                </div>
+                <input type="checkbox" class="download__checkbox" id="pay">
+                <label class="download__label" for="pay">
+                    <div class="download__border-wrap">
+                        <button type="button" class="download__pay button">
+                            <img src='./images/SVG/SVG/modal_fa-solid_file-download.svg' alt='download-icon' class="download__icon">
+                            <h3 class="download__title">Download for 20$</h3>
+                            <ul class="download__sub-list">
+                                <li class="download__sub-item">
+                                    <p class="download__description">Donec posuere augue venenatis, aliquet</p>
+                                </li>
+                                <li class="download__sub-item">
+                                    <p class="download__description">Donec posuere augue venenatis, aliquet</p>
+                                </li>
+                                <li class="download__sub-item">
+                                    <p class="download__description">Donec posuere augue venenatis, aliquet</p>
+                                </li>
+                            </ul>
+                        </button>
+                    </div>
+                </label>
             </li>
         </ul>
         <p class="modal__discription">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque.
@@ -108,11 +116,14 @@
                 </li>
             </ul>
         </div>
+
         <div class="modal__download">
             <div class="btn-wrapper modal--button">
                 <button type="button" class="button button-hf">Download</button>
+                <a href="#" download class="button-hf modal__button">Download</a>
             </div>
         </div>
+
         <button type="button" class="modal__close-button" data-modal-close>
             <img src="./images/SVG/SVG/modal_ep_close.svg" alt="/">
         </button>
