@@ -65,15 +65,29 @@
     }
 }
 
+.download__checkbox {
+    appearance: none;
+}
+
 .download__free {
     display: block;
-    padding: 28px 20px 88px 20px;
-    background: $linear;
+    padding: 26px 18px 86px 18px;
+    background: $bcg-c-black;
     color: $c-white;
-    margin-bottom: 20px;
     border-radius: 6px;
     border-width: 0;
     text-align: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .download__border-wrap:hover & {
+        background: $linear;
+    }
+
+    &:focus,
+    &:active {
+        background: $linear;
+    }
 }
 
 .download__border-wrap {
@@ -93,6 +107,17 @@
     background-color: $bcg-c-black;
     color: $c-white;
     padding: 26px 18px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .download__border-wrap:hover & {
+            background: $linear;
+        }
+    
+        &:focus,
+        &:active {
+            background: $linear;
+        }
 }
 
 .download__icon {
@@ -245,7 +270,6 @@
     color: $c-white;
 
     border-radius: 5px;
-    // border-width: 0;
 
     @media screen and (min-width: 768px) {
         width: 200px;
@@ -259,6 +283,11 @@
     top: 20px;
     right: 20px;
     border: 0;
-    padding: 0;
+    padding: 3px;
     background: transparent;
+    border-radius: 50%;
+
+    &:hover {
+        background: $linear;
+    }
 }
